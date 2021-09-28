@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CHALLENGE #1: Building a Pagination Component</title>
+</head>
+<style>
+
+body{
+
+
+}
+
+.pagination{
+
+margin: 250px auto;
+display: flex;
+justify-content: center;
+position: relative;
+width: 420px;
+gap: 8px;
+
+}
+
+/* NORMAL BUTTONS */
+.number-button{
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+width: 32px;
+height: 32px;
+color: #343a40;
+font-weight: 500;
+font-size: 18px;
+background-color: #FFF;
+cursor: pointer;
+}
+
+.number-button:link, .number-button:visited {
+
+
+}
+
+.number-button:hover, .number-button:active {
+
+background-color:  #087f5b;
+border-radius: 50%;
+color: #FFF;
+}
+
+.number-button:nth-child(4){
+
+  background-color:  #087f5b;
+border-radius: 50%;
+color: #FFF;
+
+}
+
+
+
+
+/* LEFT_RİGHT_BUTTONS */
+
+
+.button-left{
+
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #087f5b;
+border-radius: 50%;
+width: 32px;
+height: 32px;
+transform: scale(1.5);
+position: absolute;
+left: 0;
+color: #343a40;
+font-weight: 500;
+font-size: 18px;
+background-color: #FFF;
+cursor: pointer;
+}
+
+.button-left:link, .button-left:visited {
+
+
+}
+
+.button-left:hover, .button-left:active {
+  stroke: #FFF;
+background-color:  #087f5b;
+border-radius: 50%;
+}
+
+.button-left-icon{
+
+stroke: #087f5b;
+
+}
+
+
+.button-left:hover .button-left-icon{
+
+stroke: #FFF;
+
+}
+
+
+
+
+.button-right{
+
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #087f5b;
+border-radius: 50%;
+width: 32px;
+height: 32px;
+transform: scale(1.5);
+position: absolute;
+right: 0;
+color: #343a40;
+font-weight: 500;
+font-size: 18px;
+background-color: #FFF;
+cursor: pointer;
+}
+
+.button-right:link, .button-right:visited {
+
+
+}
+
+.button-right:hover, .button-right:active {
+
+background-color:  #087f5b;
+border-radius: 50%;
+color: #FFF;
+}
+
+
+
+.button-right-icon{
+
+stroke: #087f5b;
+
+}
+
+.button-right:hover .button-right-icon{
+
+stroke: #FFF;
+
+}
+
+
+</style>
+
+<body>
+
+  <div class="pagination">
+
+  <button class="button-left">
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="button-left-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+
+  </button>
+
+  <button class="number-button">1</button>
+  <button class="number-button">2</button>
+  <button class="number-button">3</button>
+  <button class="number-button">4</button>
+  <button class="number-button">5</button>
+  <button class="number-button">6</button>
+  <button class="number-button">...</button>
+  <button class="number-button">23</button>
+
+  <button class="button-right">
+<svg xmlns="http://www.w3.org/2000/svg" class="button-right-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg>
+
+  </button>
+
+</div>
+
+</body>
+</html>
